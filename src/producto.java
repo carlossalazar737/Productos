@@ -1,10 +1,43 @@
 public class producto {
-    public String nombre;
-    public double precio;
-    String categoria;
-    boolean disponible;
+    private String nombre;
+    private double precio;
+    private String categoria;
+    private boolean disponible;
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public boolean Disponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
     public void mostrarinformacion(){
-        System.out.println("NOMBRE: "+ nombre + "\nPRECIO: "+ precio + "\nCategoria: "+ categoria + "\nDisponibilidad:" + disponible);
+        System.out.println("NOMBRE: "+ getNombre() + "\nPRECIO: "+ getPrecio() + "\nCategoria: "+ getCategoria() + "\nDisponibilidad:" + disponible);
 
     }
     public void cambiardisponibilidad(boolean nuevaDisponibilidad){

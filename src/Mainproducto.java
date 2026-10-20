@@ -3,18 +3,21 @@ public class Mainproducto {
         producto P1 = new producto();
         producto P2 = new producto();
         producto P3 = new producto();
-        P1.nombre = "ETB";
-        P1.precio = 89.99;
-        P1.categoria = "Pokemon";
-        P1.disponible = true;
-        P2.nombre = "Booster pack";
-        P2.precio = 7.99;
-        P2.categoria = "Pokemon";
-        P2.disponible = false;
-        P3.nombre = "Blister pack";
-        P3.precio = 23.99;
-        P3.categoria = "Pokemon";
-        P3.disponible = true;
+        P1.setNombre("ETB");
+        P1.setPrecio(89.99);
+        P1.setCategoria("Pokemon");
+        P1.setDisponible(true);
+
+        P2.setNombre("Booster pack");
+        P2.setPrecio(7.99);
+        P2.setCategoria("Pokemon");
+        P2.setDisponible(false);
+
+        P3.setNombre("Blister pack");
+        P3.setPrecio(23.99);
+        P3.setCategoria("Pokemon");
+        P3.setDisponible(true);
+
         P1.mostrarinformacion();
         P1.mostrardisponibilidad();
         P2.mostrarinformacion();
